@@ -31,11 +31,11 @@
           @apply pb-6;
         }
         aside div h3 {
-          @apply text-offWhite text-xl font-bold mb-3 cursor-pointer hover:text-orange transition-all duration-200;
+          @apply text-offWhite text-xl lg:text-2xl font-bold mb-3 cursor-pointer hover:text-orange transition-all duration-200;
         }
         aside div p {
-          @apply text-GrayishBlue;
-          font-size: 15px;
+          @apply text-GrayishBlue lg:text-lg;
+          /* font-size: 15px; */
         }
         .other-article > div {
           @apply flex w-full gap-3 mb-8;
@@ -75,8 +75,8 @@
     </script>
     <script src="./index.js" defer></script>
   </head>
-  <body class="py-2 lg:py-0 max-w-7xl mx-auto">
-    <header class="flex items-center justify-between p-4 lg:mb-8">
+  <body class="py-2 lg:py-0 max-w-7xl mx-auto lg:px-4">
+    <header class="flex items-center justify-between p-4 lg:mb-8 lg:px-0">
       <a href="#">
         <img src="/assets/images/logo.svg" alt="logo" />
       </a>
@@ -113,19 +113,21 @@
       </div>
     </div>
     <main class="lg:grid lg:grid-cols-3">
-      <section class="py-4 lg:col-span-2 lg:py-0">
+      <section class="py-4 lg:col-span-2 lg:py-0 lg:pr-10">
         <img
-          class="md:hidden"
+          class="md:hidden px-4"
           src="/assets/images/image-web-3-mobile.jpg"
           alt=""
         />
         <img
-          class="hidden md:block md:px-4"
+          class="hidden md:block md:px-4 lg:px-0"
           src="/assets/images/image-web-3-desktop.jpg"
           alt=""
         />
-        <div class="p-4 lg:grid lg:grid-cols-2 lg:gap-2">
-          <h1 class="font-bold text-5xl">The Bright Future of Web 3.0?</h1>
+        <div class="p-4 lg:grid lg:grid-cols-2">
+          <h1 class="font-bold text-5xl lg:pr-20 lg:text-6xl">
+            The Bright Future of Web 3.0?
+          </h1>
           <div>
             <p class="text-lg text-DarkGrayishBlue">
               We dive into the next evolution of the web that claims to put the
@@ -140,8 +142,12 @@
           </div>
         </div>
       </section>
-      <aside class="mx-4 px-6 bg-VeryDarkBlue">
-        <h2 class="text-orange capitalize font-bold text-3xl py-6">new</h2>
+      <aside class="mx-4 px-6 bg-VeryDarkBlue lg:mx-0 lg:px-10">
+        <h2
+          class="text-orange capitalize font-bold text-3xl py-6 lg:text-5xl lg:py-10"
+        >
+          new
+        </h2>
         <div class="border-b border-DarkGrayishBlue">
           <h3>Hydrogen VS Electric Cars</h3>
           <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
