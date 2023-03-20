@@ -24,11 +24,14 @@
         html {
           font-family: "Inter", sans-serif;
         }
+        header nav ul li {
+          @apply cursor-pointer hover:text-red transition-all duration-200;
+        }
         aside div {
           @apply pb-6;
         }
         aside div h3 {
-          @apply text-offWhite text-xl font-bold mb-3;
+          @apply text-offWhite text-xl font-bold mb-3 cursor-pointer hover:text-orange transition-all duration-200;
         }
         aside div p {
           @apply text-GrayishBlue;
@@ -39,14 +42,14 @@
         }
 
         .other-article img {
-          @apply w-1/3 md:w-2/5;
+          @apply w-1/3 md:w-2/5 lg:w-2/6;
           max-width: 150px;
         }
         .other-article-content span {
           @apply text-4xl text-GrayishBlue font-bold;
         }
         .other-article-content h4 {
-          @apply text-xl font-bold my-2;
+          @apply text-xl font-bold my-2 cursor-pointer hover:text-red transition-all duration-200;
         }
         .other-article-content p {
           @apply text-base text-DarkGrayishBlue;
@@ -78,7 +81,7 @@
         <img src="/assets/images/logo.svg" alt="logo" />
       </a>
       <nav class="hidden md:flex">
-        <ul class="flex items-center justify-between gap-4">
+        <ul class="flex items-center justify-between gap-4 lg:gap-12">
           <li>Home</li>
           <li>New</li>
           <li>Popular</li>
@@ -130,7 +133,7 @@
               it really fulfilling its promise?
             </p>
             <button
-              class="my-4 px-8 py-4 bg-red text-offWhite uppercase font-bold tracking-widest"
+              class="my-4 px-8 py-4 bg-red text-offWhite uppercase font-bold tracking-widest cursor-pointer hover:bg-VeryDarkBlue transition-all duration-300"
             >
               read more
             </button>
