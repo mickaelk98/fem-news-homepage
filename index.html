@@ -69,6 +69,7 @@
         },
       };
     </script>
+    <script src="./index.js" defer></script>
   </head>
   <body class="py-2">
     <header class="flex items-center justify-between p-4">
@@ -84,10 +85,29 @@
           <li>Categories</li>
         </ul>
       </nav>
-      <span>
+      <span class="cursor-pointer" id="menu-icon">
         <img src="/assets/images/icon-menu.svg" alt="nav bar" />
       </span>
     </header>
+    <div
+      class="hidden fixed top-0 left-0 h-screen w-full flex-row-reverse bg-GrayishBlue/60"
+      id="mobile-menu"
+    >
+      <div class="flex flex-col gap-20 bg-offWhite w-2/3 p-8">
+        <span class="self-end cursor-pointer" id="menu-icon-close">
+          <img src="/assets/images/icon-menu-close.svg" alt="nav bar" />
+        </span>
+        <nav>
+          <ul class="flex flex-col gap-6">
+            <li>Home</li>
+            <li>New</li>
+            <li>Popular</li>
+            <li>Trending</li>
+            <li>Categories</li>
+          </ul>
+        </nav>
+      </div>
+    </div>
     <main>
       <section class="p-4">
         <img src="/assets/images/image-web-3-mobile.jpg" alt="" />
